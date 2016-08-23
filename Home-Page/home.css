@@ -1,38 +1,20 @@
-html {
-    padding: 10px;
-    background-color: #888;
+
+html{
+  background-color: #2c3e50;
+  }
+  .navbar{
+  margin-bottom: 0px;
+  background-color: #2c3e50;
 }
 
-/*css for index.html*/
-
-.nav-bar {
-    border: 3px #555 solid;
-}
-.nav-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-.nav-bar li {
-    float: left;
-}
-.nav-bar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.nav-bar li a:hover {
-    background-color: #83191B;
+.navbar-inverse .navbar-nav>li>a {
+    color:white;
 }
 .intro-header {
     padding-top: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(homePicture.jpg) no-repeat center center;
+    background: url(porsche-wallpaper.jpg) no-repeat center center;
     background-size: cover;
 }
 .intro-message {
@@ -50,39 +32,108 @@ html {
     border-top: 1px solid white;
     border-bottom: 1px solid #6A6476;
 }
-.intro-message h5 {
-    font-size: 1.5em;
+.intro-message h4 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
-.signUpSelect {
-    margin-bottom: 20px;
-}
-.mainBtn {
-    color: #83191B;
-    text-shadow: 2px 2px 3px #4C4C4C;
-    font-size: 2.5em;
-}
-.signUpContent {
+signUpContent {
     margin-right: 15px;
     padding-top: 40px;
 }
-.userInfo {
-    text-align: center;
+.userInfo{
+  text-align: center;
 }
-.userInfo ul {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-right: 25px;
+.userInfo ul{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 25px;
 }
-.userInfo li {
-    padding-bottom: 10px;
+    .userInfo li{
+      padding-bottom: 10px;
+    }
+.form {
+    background: rgba($form-bg, .9);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: $br;
+    box-shadow: 0 4px 10px 4px rgba($form-bg, .3);
 }
-#pageVerbs{
-  margin-top: 20px;
+#signUpSubmit{
+  margin-bottom:20px
 }
-#signUpSubmit {
-    margin-bottom: 20px
+#loginSubmit{
+  margin-bottom:20px
 }
-#loginSubmit {
-    margin-bottom: 20px
+.featuredContent{
+  text-align: left;
+  float: left;
+}
+#build{
+  margin-top:10px;
+  height: 250px;
+  width:250px;
+  background: url(07-fugu-z-1.jpg) no-repeat center center;
+  background-size: cover;
+
+}
+#builder{
+  margin-top:10px;
+  height: 250px;
+  width:250px;
+  background: url(RWB.jpg) no-repeat center center;
+  background-size: cover;
+
+}
+#shop{
+  margin-top:10px;
+  height: 250px;
+  width:250px;
+  background: url(P003.jpg) no-repeat center center;
+  background-size: cover;
+
+}
+.feature-divider {
+  display:none;
+}
+@media (max-width: 769px){
+  .featuredContent h3{
+  margin-top:10
+
+  }
+  #build{
+    float:left;
+    display: inline;
+  }
+  #builder{
+    float:left;
+    display: inline;
+  }
+  #shop{
+    float:left;
+    display: inline;
+  }
+}
+@media (max-width: 375px) {
+  .feature-divider {
+      display:block;
+      width: 60%;
+      border-top: 1px solid white;
+      border-bottom: 1px solid #6A6476;
+  }
+  .featuredContent h3{
+    display:inline-block;
+
+  }
+  #build{
+width:100%;
+    float:left;
+  }
+  #builder{
+    width:100%;
+    float:left;
+  }
+  #shop{
+    width:100%;
+    float:left;
+  }
 }
